@@ -7,7 +7,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 gem 'fastlane', '2.225.0'
 gem 'json'
 gem 'rubocop', '1.38', group: :rubocop_dependencies
-gem 'sinatra', group: :sinatra_dependencies
+gem 'sinatra', '>= 4.2.0', group: :sinatra_dependencies
 
 eval_gemfile('fastlane/Pluginfile')
 
@@ -20,5 +20,5 @@ group :sinatra_dependencies do
   gem 'eventmachine'
   gem 'faye-websocket'
   gem 'puma'
-  gem 'rackup'
+  gem 'rackup', '>= 2.2.1'
 end
