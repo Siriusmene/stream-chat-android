@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-gem 'fastlane', '2.225.0'
+gem 'fastlane', '2.226.0'
 gem 'json'
 gem 'rubocop', '1.38', group: :rubocop_dependencies
 gem 'sinatra', group: :sinatra_dependencies
